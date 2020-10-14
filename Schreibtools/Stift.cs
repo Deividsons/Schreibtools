@@ -7,5 +7,6 @@ namespace Schreibtools
 	abstract class Stift
 	{
 		public double Strichstärcke { get; set; }
+
 	}
 }

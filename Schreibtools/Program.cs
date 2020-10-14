@@ -6,7 +6,7 @@ namespace Schreibtools
 	{
 		static void Main(string[] args)
 		{
-
+			Console.WriteLine("Halloo");
 		}
 	}
 	

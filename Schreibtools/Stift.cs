@@ -6,7 +6,19 @@ namespace Schreibtools
 {
 	abstract class Stift
 	{
-		public double Strichstärcke { get; set; }
+		public double Strichstaercke { get; set; }
+		public ConsoleColor Farbe { get; set; }
+		public string Typ { get; set; }
 
+		public Stift(double strichstaerke)
+		{
+			Strichstaercke = strichstaerke;
+			Typ = "unbekannt";
+			Farbe = ConsoleColor.Blue;
+		}
+		public Stift(double strichstaerke, ConsoleColor farbe) : this(strichstaerke)
+		{
+			Farbe = farbe;
+		}
 	}
 }

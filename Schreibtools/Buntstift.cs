@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Schreibtools
 {
-	class Buntstift
+	class Buntstift : Stift
 	{
+		public Buntstift(double strichstaerke, ConsoleColor farbe) : base(strichstaerke, farbe)
+		{
+			Typ = "Buntstift";
+		}
 	}
 }

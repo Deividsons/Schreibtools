@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Schreibtools
 {
-	class Kugelschreiber
+	class Kugelschreiber : Stift
 	{
+		public Kugelschreiber(double strichstaerke, ConsoleColor farbe) : base(strichstaerke, farbe)
+		{
+			Typ = "Kugelschreiber";
+		}
 	}
 }
